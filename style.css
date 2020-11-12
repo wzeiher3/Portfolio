@@ -1,7 +1,19 @@
 body {
-  margin: 0;
-  font-family: Arial, Helvetica;
-	background-image:url(backgroud-2.jpg);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 header {
@@ -13,14 +25,22 @@ header {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-image:url(backgroud-2.jpg);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
   }
 }
 
 @media screen and (max-width: 992px) {
   body {
-    background-image:url(backgroud-2.jpg);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
   }
+}
+
+main{
+
 }
 
 header h1{
@@ -43,6 +63,10 @@ header nav ul {
   padding-left: 0;
   padding: 5px;
   list-style: none;
+}
+
+nav ul li{
+  margin: auto;
 }
 
 header nav ul li a {
@@ -81,16 +105,23 @@ footer {
   text-align: center;
 }
 
-h1, h3 {
+h1{
   font-family: 'Georgia', serif;
-	color: #ee87f1;
+	color: #4eeb2f;
+  text-align: center;
+  font-weight: 400;
+}
+
+h3{
+  font-family: 'Georgia', serif;
+	color: #1deef5;
   text-align: center;
   font-weight: 400;
 }
 
 h2 {
   font-family: 'Georgia', serif;
-	color: #3dd317;
+	color: #faed32;
   text-align: center;
   font-weight: 400;
 }
@@ -130,19 +161,18 @@ img{
 p, li{
  font-family: 'Montserrat', sans-serif;
  line-height: 1.5em;
- color: aqua;
+ color: white;
  line-height: 20px;   
   margin-bottom: 10px; 
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 ol {
   display: table;
   margin: 0 auto;
   line-height: 20px; 
-  margin-right: 150px;
-  margin-left: 80px;
+  margin-bottom: 20px;
 }
 
 form label {
@@ -151,24 +181,44 @@ form label {
   margin-bottom: 5px;
   color: aqua;
   font-family: arial;
-  margin-left: 200px;
+  margin-left: 50px;
+}
+
+form{
+  margin: auto;
 }
 
 form input[type=text] {
   color: black;
   font-size: 16px;
   margin-bottom: 20px;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 
 textarea {
   width: 300px;
   height: 150px;
-  margin-left: 200px;
+  margin-left: 50px;
+}
+
+.contact_content{
+  text-align: center;
 }
 
 form button{
   margin-left: 200px;
 }
 
+.thisList {
+  text-align: center;
+}
+
+.intro{
+  text-align: center;
+}
+
+.introContent{
+    display: inline-block;
+    text-align: left;
+}
 
