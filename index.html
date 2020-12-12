@@ -6,24 +6,28 @@
     <title>Will Zeiher | Software Engineer | Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body>
 
-      <header>
+      <header >
         <h1>Will Zeiher</h1>
-        <nav>
-            <ul>
-	      <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <li><a href="#about"> About</a></li> | <li><a href="#portfolio">Projects</a></li> | <li><a href="#contact">Contact</a></li>
+         </nav>
         
-
-        <h2>Software Engineer</h2>
       </header>  
 
-    <script src="script.js"></script>
       
       <main>
 
@@ -31,29 +35,57 @@
           <div class="introContent">
           <img src="picOfMe.png" alt="Will Zeiher - Profile Photo" class="center">
           <h1>Hey! I'm Will Zeiher</h1>
-            <p>I am an aspiring software engineer living in Atlanta, GA</p>
-            <p>Here are some interesting facts about me<p>
+            <p>I am an aspiring Software Engineer living in Atlanta, GA</p>
+            <!-- <p>Here are some interesting facts about me<p>
             <ul>
                 <li>I am currently a computer engineering student at Georgia Tech</li>
                 <li>I have been coding for about 5 years now</li>
                 <li>I use my synesthesia to help visualize coded objects</li>
-            </ul>
-
-            <p>Dont hesitate to contact me!</p>
+            </ul> -->
           </div>
         </section>
       
         <!--About Me -->
         <section id="about">
-          <h2 class="general-border">About Me</h2>
-            <p>As a student who has been working with programming languages for several years now, I have always had a great time working on a ton of exciting projects like Battleship, Mancala, 2048, and my own RPG videogame</p>
+          <div class="about_content">
+            <h2 class="general-border">About Me</h2>
+            <hr>
+            <!-- <p>As a student who has been working with programming languages for several years now, 
+              I have always had a great time working on a ton of exciting projects like Battleship, Mancala, 2048, 
+              and my own RPG videogame</p> -->
 
-            <p>Outside of programming, I enjoy adventure sports, playing trumpet, and engaging in new experiences</p>
+              <p>I'm a full stack web developer and a computer engineering student at Georgia Tech</p>
+
+              <p>Born and raised in Atlanta, GA, I have always been excited about the advancement of technology. My passion is using creative
+                 and intuitive design to transform the way we interact in the digital space. The constant innovation 
+                happening in the industry has made me so excited to start my journey as a professional developer. 
+              </p>
+
+              <p>Outside of programming, I enjoy adventure sports, reading, playing trumpet, and engaging in new experiences</p>
+          </div>
         </section>
-      <hr>
+      
+
+
+      <!-- <div class="ethos-background" id="about">
+        <section class="ethos-section">
+          <div class="ethos-statement fade-left">
+            <h2>What I Will Bring to the Table:</h2>
+            <p><i>I strive to always be  at the forefront of what it means to write quality code with an emphasis on
+                effective communication and understanding. I believe it's crucial to teamwork and to learn 
+                and grow everyday as I challenge myself to reflect my values in my work and attitude!
+                I am 32 year old student studying at <a href="https://www.Thinkful.com">Thinkful</a>, 
+                and while born and raised in Philadelphia, PA, I have grown to love to experience anything 
+                the world has to offer. While finding myself has been a life-long journey, I have always had 
+                a programmer's mindset; I was the kid in the family who <em>'spoke computer'.</em> From being 
+                a traveling musician, a waiter, a recording engineer, to a home health aide, with
+                my storied background I have finally found a dream profession creating exemplary websites!</i></p>
+          </div>
+        </section>
+      </div> -->
       
       <!--Projects-->
-      <section id="projects">
+      <!-- <section id="projects">
         <h2>Projects</h2>
         <h3>Battleship</h3>
           <p>It is a single player Battleship game that plays against a computer.
@@ -64,23 +96,63 @@
         <p>The project uses VHDL to make a robot circle around various, randomly placed beacons autonomously. Useful in 
           academic research environments.
         </p>
+      </section> -->
+
+      <div class="portfolio-title" id="portfolio">
+        <h2>Projects</h2>
+        <hr>
+      </div>
+      <section class="portfolio-section">
+        <div class="project">
+          <h4>Ways!</h4>
+          <a href="https://ways-client.vercel.app/"><img src="images/trip SS.png" class="center" alt="A Quirky Coming Soon Sign" style="width:50%"></a>
+          <a href="https://github.com/wzeiher3/trip-client.git">Repo</a>
+          <p>Ways! is an app that helps you plan the perfect trip! You can also 
+            see other trips to get ideas for your trip. This app is targeted for people
+            who like to travel.</p>
+          <p>Tech Stack: REACT, JavaScript, CSS3, HTML5, NodeJS, ExpressJS, PostgreSQL, Google Maps API, Flikr API</p>
+        </div >
+        <div class="project">
+          <h4>Language Learner</h4>
+          <a href="https://language-learner.vercel.app/"><img src="images/language SS.png" class="center" alt="A Quirky Coming Soon Sign" style="width:50%"></a>
+          <a href="https://github.com/wzeiher3/SpacedRepetition.git">Repo</a>
+          <p>Language Learner is a language learning application 
+            that assists users in learning how to speak multiple foreign 
+            languages by using spaced repetition.</p>
+          <p>Tech Stack: REACT, JavaScript, CSS3, HTML5, NodeJS, ExpressJS, PostgreSQL</p>
+        </div>
+        <div class="project">
+          <h4>Deals Tracker</h4>
+          <a href="https://deals-tracker-app.wzeiher3.vercel.app/"><img src="images/deals App SS.png" class="center" alt="A Quirky Coming Soon Sign" style="width:50%"></a>
+          <a href="https://github.com/wzeiher3/deals-app.git">Repo</a>
+          <p>My project is an application that will allow users to save and track deals that they find at various restaurants.
+            Targeted for people who like to eat out and save money.
+          </p>
+          <p>Tech Stack: REACT, JavaScript, CSS3, HTML5, NodeJS, ExpressJS, PostgreSQL</p>
+        </div>
       </section>
 	
       <!--Contact-->
       <section id="contact">
-          <h2 class="general-border">Contact Info</h2>
-           <div class="contact_content">
-            <p>Places to contact me!</p>
-            <ol class="thisList">
-              <li>
-                <a href="linkedin.com/in/will-zeiher-3b3355185">LinkedIn</a>
+        <h2 class="general-border">Contact Info</h2>
+          <div class="contact_content">
+            <div class="contactIcons">
+              <ol class="thisList">
+                <li>
+                  <a href="linkedin.com/in/will-zeiher-3b3355185">LinkedIn</a>
+                </li>
+                <li>
+                 <a href="https://github.com/wzeiher3">GitHub</a>
+               </li>
+               <li>
+                  <a href="mailto:wzeiher3@gmail.com">Email</a>
               </li>
-              <li>
-                <a href="https://github.com/wzeiher3">GitHub</a>
-             </li>
-          </ol> 
+            </ol> 
+          </div>
 
-          <form>
+          
+
+          <form class=>
             <label for="Name">Name</label>
             <input id="Name" type="text" name="name"
              maxlength="20" required />
@@ -99,7 +171,12 @@
           </form>
           
           <form>
-            <button type="submit">Submit</button>
+            <!-- <button type="submit"  class="Button myButton">Submit</button> -->
+            <div class="multi-button">
+              
+                <button type="submit">Submit</button>
+            
+            </div>
           </form>  
         </div>
         </section>

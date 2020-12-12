@@ -1,224 +1,335 @@
+:root {
+  --border-size: 0.125rem;
+  --duration: 250ms;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --font-family: monospace;
+  --color-primary: white;
+  --color-secondary: black;
+  --color-tertiary: dodgerblue;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --space: 1rem;
+}
+
+
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
+    overflow-x: hidden; 
+  } 
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+  /* main {
+    background-blend-mode: luminosity;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  } */
 
-header {
-  height: 140px;
-  background-image:url(background-3.jpg);
-  width: 100%;
-  
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  main{
+      background-color: #1B1730
   }
-}
 
-@media screen and (max-width: 992px) {
-  body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-  }
-}
 
-main{
 
-}
-
-header h1{
-  font-size: 52px;
-  font-family: 'Gochi Hand', cursive;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding-top: 20px;
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul {
-  display: flex;
+  h1 {
+    font-family: "Fira Code",monospace;
+    font-size: 74px;
+    font-weight: 100;
+    margin: auto;
+    text-align: center;
+    color: white;
+  } 
   
-  padding-left: 0;
-  padding: 5px;
-  list-style: none;
-}
+  h2 {
+    font-size: 44px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #FF87EB;
+    text-align: center;
+    font-family: "Fira Code", monospace;
+  }
+  
+  h3 {
+    font-size: 34px;
+    font-weight: 100;
+  
+  }
+  
+  hr {
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: solid #2f6c6e 1px;
+    opacity: .5;
+  }
+  
+  li {
+    padding: 10px;
+  }
 
-nav ul li{
-  margin: auto;
-}
+  a{
+    font-family: 'Nova Square', cursive;
+    font-size: 20px;
+    text-decoration: none;
+  }
 
-header nav ul li a {
-  font-family: Montserrat;
-  color: #fff;
-  padding: 5px;
-  margin: 5% 0;
-  text-decoration: none;
-  margin: 0 20px 0 0;
-}
+  label{
+    font-family: 'Nova Square', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: #78FF81;
+  }
 
-header nav ul li{
-  padding: 5px 10px;
-}
-
-header nav ul li{
-  font-size: 20px;
-  display: flex;
-}
-
-header nav ul li:last-child a {
-  margin-right: 0;
-}
-
-footer {
-  height: 40px;
-  background-image:url(background-3.jpg);
-  text-align: left;
-}
-
-/*name title*/
-.name {
-  font-family: cursive, Helvetica;
-  font-size: 72px;
-  color: #c04b1c;
-  text-align: center;
-}
-
-h1{
-  font-family: 'Georgia', serif;
-	color: #4eeb2f;
-  text-align: center;
-  font-weight: 400;
-}
-
-h3{
-  font-family: 'Georgia', serif;
-	color: #1deef5;
-  text-align: center;
-  font-weight: 400;
-}
-
-h2 {
-  font-family: 'Georgia', serif;
-	color: #faed32;
-  text-align: center;
-  font-weight: 400;
-}
-
-a:link { color: #08c49b; }
-a:visited { color: #2ed1dd; }
-a:hover { color: #bd6d28; }
-a:active { color: #e71c26; }
-a:hover {
-	text-decoration: underline;	
-}
-
-h1 { font-size: 30px; }
-h2 { font-size: 24px; }
-h3 { font-size: 16px; }
+  a:link { color: white; }
+a:visited { color: white; }
+a:hover { color: aquamarine; }
+a:active { color: white; }
 
 img{
-  width: 80%;	
-  border-radius: 8px;
-  border: 1px solid #c5c0b8;
+    width: 80%;	
+    border-radius: 8px;
+    border: 1px solid #c5c0b8;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+  /* intro content */
+
+  .introContent{
+      align-items: center;
+      text-align: center;
+      color: white;
+  }
+
+  .introContent > p{
+        font-family: 'Nova Square', cursive;
+  }
+
+
+  /* header and nav */
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 1%;
+    margin-top: 5%;
+    font-size: 18px;
+    color: #292349;
+    margin-bottom: 0px;
+    background-color: #473380;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #473380;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+  }
+
+  header > h1 {
+      margin-left: 5px;
+      font-size: 25px;
+      /* margin-top: 50px; */
+  }
+
+  nav li a{
+      margin-bottom: 10px;
+      padding-bottom: 50px;
+  }
+
+
+  /* about me */
+
+  .about_content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      text-align: left;
+      margin: auto;
+  }
+
+  .about_content p {
+      margin: 10px;
+      color: white;
+      font-family: 'Nova Square', cursive;
+      font-size: 20px;
+  }
+
+
+
+  .portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+  }
+
+  .portfolio-section a{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: left;
+    color: #78FF81;
+    margin: auto;
+  }
+
+  .portfolio-section p {
+    margin: 10px;
+    color: white;
+    font-family: 'Nova Square', cursive;
+    font-size: 20px;
 }
 
-/*border for separation*/
-.general-border {
-  padding-top: 40px;
-  border-top: 3px solid #ccc1b7;
+.portfolio-section h4 {
+    margin: 10px;
+    color: white;
+    font-family: "Fira Code", monospace;
+    font-size: 30px;
+    text-align: center;
+    color: #3DF5F5;
 }
 
-/*centers image*/
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.project{
+    margin-bottom: 20px;
 }
 
-p, li{
- font-family: 'Montserrat', sans-serif;
- line-height: 1.5em;
- color: white;
- line-height: 20px;   
-  margin-bottom: 10px; 
-  margin-right: 50px;
-  margin-left: 50px;
+/* contact css */
+
+
+.contact_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: left;
+    margin: auto;
 }
 
-ol {
-  display: table;
-  margin: 0 auto;
-  line-height: 20px; 
-  margin-bottom: 20px;
+.contactIcons{
+  margin-right: 42px;
 }
 
-form label {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 5px;
-  color: aqua;
-  font-family: arial;
-  margin-left: 50px;
+.contactIcons ol{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.contactIcons ol li{
+    text-decoration: none;
+    list-style: none;
 }
 
 form{
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-form input[type=text] {
-  color: black;
-  font-size: 16px;
+
+/* @media all and (min-width: 800px) {
+
+    .portfolio-section > img {
+        width: 80%;	
+        border-radius: 8px;
+        border: 1px solid #c5c0b8;
+    }
+} */
+
+
+
+
+/* button */
+
+.multi-button button {
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+  border: var(--border-size) solid black;
+  color: var(--color-secondary);
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  text-transform: lowercase;
+  text-shadow: var(--shadow) 2px 2px;
+  transition: flex-grow var(--duration) var(--ease);
+  margin-top: 10px;
   margin-bottom: 20px;
-  margin-left: 50px;
 }
 
-textarea {
-  width: 300px;
-  height: 150px;
-  margin-left: 50px;
+.multi-button button:hover,
+.multi-button button:focus {
+  flex-grow: 2;
+  color: white;
+  outline: none;
+  text-shadow: none;
+  background-color: #3DF5F5;
 }
 
-.contact_content{
-  text-align: center;
+
+/* footer */
+
+footer{
+  background-color: #473380;
+  margin: 0px;
 }
 
-form button{
-  margin-left: 200px;
+footer p{
+  margin: 0px;
+  color: white;
 }
 
-.thisList {
-  text-align: center;
-}
 
-.intro{
-  text-align: center;
-}
 
-.introContent{
-    display: inline-block;
-    text-align: left;
-}
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden; 
+      } 
+      .portfolio-section p {
+        margin: 5px;
+        color: white;
+        font-family: 'Nova Square', cursive;
+        font-size: 20px;
+      }
 
+      header{
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav {
+        margin: auto;
+      }
+
+      h1{
+          font-size: 50px;
+          margin: 5px;
+      }
+
+      p{
+          margin: 5px;
+      }
+    
+  }
+  
+  @media screen and (max-width: 992px) {
+    body {
+        overflow-x: hidden; 
+      } 
+  }
