@@ -140,9 +140,10 @@ img{
       /* margin-top: 50px; */
   }
 
-  nav li a{
-      margin-bottom: 10px;
-      padding-bottom: 50px;
+  nav a{
+     margin-bottom: 5px;
+     margin-left: 3px;
+     margin-right: 3px;
   }
 
 
@@ -164,7 +165,11 @@ img{
       font-size: 20px;
   }
 
-
+  .projectLinks {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+  }
 
   .portfolio-section {
     display: flex;
@@ -181,15 +186,21 @@ img{
     flex-direction: column;
     align-items: center;
     width: 80%;
+    margin
     text-align: left;
     color: #78FF81;
     margin: auto;
+  }
+
+  .project > a{
+    margin-bottom: 40px;
   }
 
   .portfolio-section p {
     margin: 10px;
     color: white;
     font-family: 'Nova Square', cursive;
+  
     font-size: 20px;
 }
 
@@ -203,7 +214,7 @@ img{
 }
 
 .project{
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 /* contact css */
